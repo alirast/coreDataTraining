@@ -33,8 +33,8 @@ class ViewController: UIViewController {
         //managedObject.setValue(18, forKey: "age")
         
         //setting up attributes after adding entity Person class
-        managedObject.name = "Olya"
-        managedObject.age = 34
+        managedObject.name = "Petya"
+        managedObject.age = 14
         
         //getting values of attributes from the context
         //let name = managedObject.value(forKey: "name")
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
         
         
         //deleting data (whole)
-        do {
+        /*do {
             let results = try CoreDataManager.instance.context.fetch(fetchRequest)
             for result in results as! [NSManagedObject] {
                 CoreDataManager.instance.context.delete(result)
@@ -77,7 +77,7 @@ class ViewController: UIViewController {
             print(error.localizedDescription)
         }
         //saving changes again
-        CoreDataManager.instance.saveContext()
+        CoreDataManager.instance.saveContext()*/
     }
     
 

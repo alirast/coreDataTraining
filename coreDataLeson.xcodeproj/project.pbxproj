@@ -17,6 +17,8 @@
 		4F1AA2D12A7017630082A06A /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AA2CF2A7017630082A06A /* Person+CoreDataClass.swift */; };
 		4F1AA2D22A7017630082A06A /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AA2D02A7017630082A06A /* Person+CoreDataProperties.swift */; };
 		4F1AA2D52A701D150082A06A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AA2D42A701D150082A06A /* CoreDataManager.swift */; };
+		4F1AA2D82A7025B10082A06A /* MyTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AA2D72A7025B10082A06A /* MyTableVC.swift */; };
+		4F1AA2DA2A702DDE0082A06A /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AA2D92A702DDE0082A06A /* AddVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		4F1AA2CF2A7017630082A06A /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4F1AA2D02A7017630082A06A /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4F1AA2D42A701D150082A06A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		4F1AA2D72A7025B10082A06A /* MyTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableVC.swift; sourceTree = "<group>"; };
+		4F1AA2D92A702DDE0082A06A /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				4F1AA2C62A70065A0082A06A /* LaunchScreen.storyboard */,
 				4F1AA2C92A70065A0082A06A /* Info.plist */,
 				4F1AA2C12A7006580082A06A /* coreDataLeson.xcdatamodeld */,
+				4F1AA2D72A7025B10082A06A /* MyTableVC.swift */,
+				4F1AA2D92A702DDE0082A06A /* AddVC.swift */,
 			);
 			path = coreDataLeson;
 			sourceTree = "<group>";
@@ -166,7 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F1AA2DA2A702DDE0082A06A /* AddVC.swift in Sources */,
 				4F1AA2BD2A7006580082A06A /* ViewController.swift in Sources */,
+				4F1AA2D82A7025B10082A06A /* MyTableVC.swift in Sources */,
 				4F1AA2B92A7006580082A06A /* AppDelegate.swift in Sources */,
 				4F1AA2D22A7017630082A06A /* Person+CoreDataProperties.swift in Sources */,
 				4F1AA2D12A7017630082A06A /* Person+CoreDataClass.swift in Sources */,
