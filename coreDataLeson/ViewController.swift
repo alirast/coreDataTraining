@@ -22,15 +22,27 @@ class ViewController: UIViewController {
         let entityDescription = NSEntityDescription.entity(forEntityName: "Person", in: context)
         
         //create manage object
-        let managedObject = NSManagedObject(entity: entityDescription!, insertInto: context)
+        //let managedObject = NSManagedObject(entity: entityDescription!, insertInto: context)
+        
+        //create manage object after adding entity Person class
+        let managedObject = Person(entity: entityDescription!, insertInto: context)
         
         //setting up attributes
-        managedObject.setValue("Petya", forKey: "name")
-        managedObject.setValue(18, forKey: "age")
+        //managedObject.setValue("Petya", forKey: "name")
+        //managedObject.setValue(18, forKey: "age")
+        
+        //setting up attributes after adding entity Person class
+        managedObject.name = "Olya"
+        managedObject.age = 34
         
         //getting values of attributes from the context
-        let name = managedObject.value(forKey: "name")
-        let age = managedObject.value(forKey: "age")
+        //let name = managedObject.value(forKey: "name")
+        //let age = managedObject.value(forKey: "age")
+        
+        //getting values of attributes from the context after adding entity Person class
+        let name = managedObject.name
+        let age = managedObject.age
+        
         print(name, age)
         
         //saving data
@@ -40,8 +52,13 @@ class ViewController: UIViewController {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
         do {
             let results = try context.fetch(fetchRequest)
-            for result in results as! [NSManagedObject] {
+            /*for result in results as! [NSManagedObject] {
                 print("name - \(result.value(forKey: "name")!), age - \(result.value(forKey: "age")!)")
+            }*/
+            
+            //getting data from data base after adding entity Person class
+            for result in results as! [Person] {
+                print("name - \(result.name), age - \(result.age)")
             }
         } catch {
             print(error.localizedDescription)
