@@ -13,6 +13,15 @@ class CoreDataManager {
     
     private init() {}
     
+    lazy var context: NSManagedObjectContext = {
+        persistentContainer.viewContext
+    }()
+    
+    //entity Person description
+    func entityForName(_ entityName: String) -> NSEntityDescription {
+        return NSEntityDescription.entity(forEntityName: entityName, in: context)!
+    }
+    
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {
