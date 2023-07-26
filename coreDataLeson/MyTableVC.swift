@@ -20,13 +20,7 @@ class MyTableViewController: UITableViewController {
     
     //manager for results of request
     //observe all the changes
-    var fetchResultController: NSFetchedResultsController<NSFetchRequestResult> = {
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: Constants.entity)
-        let sortDescriptor = NSSortDescriptor(key: Constants.sortName, ascending: true)
-        fetchRequest.sortDescriptors = [sortDescriptor]
-        let fetchedResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: CoreDataManager.instance.context, sectionNameKeyPath: nil, cacheName: nil)
-        return fetchedResultController
-    }()
+    var fetchResultController = CoreDataManager.instance.fetchResultController(entityName: Constants.entity, sortName: Constants.sortName)
     
     override func viewDidLoad() {
         super.viewDidLoad()
