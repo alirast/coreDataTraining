@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F0204AD2A717FBC0028F203 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0204AB2A717FBC0028F203 /* Person+CoreDataClass.swift */; };
+		4F0204AE2A717FBC0028F203 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0204AC2A717FBC0028F203 /* Person+CoreDataProperties.swift */; };
 		4F1AA2B92A7006580082A06A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AA2B82A7006580082A06A /* AppDelegate.swift */; };
 		4F1AA2BB2A7006580082A06A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AA2BA2A7006580082A06A /* SceneDelegate.swift */; };
 		4F1AA2BD2A7006580082A06A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AA2BC2A7006580082A06A /* ViewController.swift */; };
@@ -14,14 +16,14 @@
 		4F1AA2C32A7006580082A06A /* coreDataLeson.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AA2C12A7006580082A06A /* coreDataLeson.xcdatamodeld */; };
 		4F1AA2C52A70065A0082A06A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F1AA2C42A70065A0082A06A /* Assets.xcassets */; };
 		4F1AA2C82A70065A0082A06A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1AA2C62A70065A0082A06A /* LaunchScreen.storyboard */; };
-		4F1AA2D12A7017630082A06A /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AA2CF2A7017630082A06A /* Person+CoreDataClass.swift */; };
-		4F1AA2D22A7017630082A06A /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AA2D02A7017630082A06A /* Person+CoreDataProperties.swift */; };
 		4F1AA2D52A701D150082A06A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AA2D42A701D150082A06A /* CoreDataManager.swift */; };
 		4F1AA2D82A7025B10082A06A /* MyTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AA2D72A7025B10082A06A /* MyTableVC.swift */; };
 		4F1AA2DA2A702DDE0082A06A /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AA2D92A702DDE0082A06A /* AddVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F0204AB2A717FBC0028F203 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4F0204AC2A717FBC0028F203 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4F1AA2B52A7006580082A06A /* coreDataLeson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coreDataLeson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F1AA2B82A7006580082A06A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F1AA2BA2A7006580082A06A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,8 +33,6 @@
 		4F1AA2C42A70065A0082A06A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F1AA2C72A70065A0082A06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F1AA2C92A70065A0082A06A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F1AA2CF2A7017630082A06A /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
-		4F1AA2D02A7017630082A06A /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4F1AA2D42A701D150082A06A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		4F1AA2D72A7025B10082A06A /* MyTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableVC.swift; sourceTree = "<group>"; };
 		4F1AA2D92A702DDE0082A06A /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
@@ -87,8 +87,8 @@
 		4F1AA2D32A7017930082A06A /* EntityPersonClass */ = {
 			isa = PBXGroup;
 			children = (
-				4F1AA2CF2A7017630082A06A /* Person+CoreDataClass.swift */,
-				4F1AA2D02A7017630082A06A /* Person+CoreDataProperties.swift */,
+				4F0204AB2A717FBC0028F203 /* Person+CoreDataClass.swift */,
+				4F0204AC2A717FBC0028F203 /* Person+CoreDataProperties.swift */,
 			);
 			path = EntityPersonClass;
 			sourceTree = "<group>";
@@ -174,13 +174,13 @@
 			files = (
 				4F1AA2DA2A702DDE0082A06A /* AddVC.swift in Sources */,
 				4F1AA2BD2A7006580082A06A /* ViewController.swift in Sources */,
+				4F0204AD2A717FBC0028F203 /* Person+CoreDataClass.swift in Sources */,
 				4F1AA2D82A7025B10082A06A /* MyTableVC.swift in Sources */,
 				4F1AA2B92A7006580082A06A /* AppDelegate.swift in Sources */,
-				4F1AA2D22A7017630082A06A /* Person+CoreDataProperties.swift in Sources */,
-				4F1AA2D12A7017630082A06A /* Person+CoreDataClass.swift in Sources */,
 				4F1AA2C32A7006580082A06A /* coreDataLeson.xcdatamodeld in Sources */,
 				4F1AA2D52A701D150082A06A /* CoreDataManager.swift in Sources */,
 				4F1AA2BB2A7006580082A06A /* SceneDelegate.swift in Sources */,
+				4F0204AE2A717FBC0028F203 /* Person+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

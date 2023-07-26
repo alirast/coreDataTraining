@@ -13,6 +13,9 @@ class AddViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet weak var departmentTextField: UITextField!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +25,7 @@ class AddViewController: UIViewController {
         if let person = person {
             nameTextField.text = person.name
             ageTextField.text = String(person.age)
+            departmentTextField.text = person.department
         }
     }
     
@@ -52,6 +56,7 @@ class AddViewController: UIViewController {
         if let person = person {
             person.name = nameTextField.text
             person.age = Int16(ageTextField.text!)!
+            person.department = departmentTextField.text
             CoreDataManager.instance.saveContext()
         }
         return true
